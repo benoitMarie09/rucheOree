@@ -1,0 +1,44 @@
+nav {
+  background-color: red;
+}
+nav > ul {
+  display: flex;
+  background-color: rgb(51, 240, 51);
+}
+nav > ul > li {
+  background-color: rgb(77, 223, 248);
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  text-align: center;
+}
+nav > ul > li > ul {
+  visibility: hidden;
+}
+nav > ul > li > a {
+  padding: 5px 0;
+}
+nav > ul > li:hover > a {
+  background-color: bisque;
+}
+nav > ul > li:hover > ul {
+  background-color: aquamarine;
+  visibility: visible;
+}
+nav > ul > li:hover > ul > li {
+  padding: 5px 0;
+}
+nav > ul > li:hover > ul > li:hover {
+  background-color: brown;
+}
+nav svg {
+  background-color: transparent;
+}
+nav svg path {
+  stroke: #292929;
+  stroke-width: 2.5px;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+/*# sourceMappingURL=nav.css.map */

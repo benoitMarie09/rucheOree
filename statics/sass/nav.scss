@@ -1,0 +1,46 @@
+nav {
+  background-color: red;
+  & > ul {
+    display: flex;
+
+    background-color: rgb(51, 240, 51);
+
+    & > li {
+      background-color: rgb(77, 223, 248);
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      text-align: center;
+      & > ul {
+        visibility: hidden;
+      }
+      & > a{
+        padding: 5px 0;
+      }
+      &:hover {
+        & > a{
+          background-color: bisque;
+        }
+        & > ul {
+          background-color: aquamarine;
+          visibility: visible;
+          &>li{
+            padding: 5px 0;
+          &:hover{
+            background-color: brown;
+          }
+          }
+        }
+      }
+    }
+  }
+  svg{
+    background-color: transparent;
+    path{
+      stroke:#292929;
+      stroke-width:2.5px ;
+      stroke-linecap:round;
+      stroke-linejoin:round;
+    }
+  }
+}
